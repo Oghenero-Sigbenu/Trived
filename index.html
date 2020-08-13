@@ -1,55 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./font-awesome/css/fontawesome-all.css"> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Thrived Studio</title>
-</head>
-<body>
-    <section>
-    </section>
-
-        <div class="parent">
-            <div class="header">
-                <p class="records"><a href="records.html" target="">RECORDS</a></p>
-                <p class="studio"><a href="studio.html" target="">STUDIO</a></p>
-                <p class="academy"><a href="academy.html" >ACADEMY</a></p>
-            </div>
-            <!-- <div class="logo">
-               <img src="files/logo.gif" alt="thrived logo"/>
-            </div> -->
-            <div class="text">
-                <p>CREATE YOUR WORLD</p>
-            </div>
-            <div class="social-media">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>ABOUT US</li>
-                    <li>CAREER</li>
-                    <li>NEWS</li>
-                    <li>CONTACT US</li>
-                </ul>
-                <div class="social-media">
-                    <i class="fa fa-facebook-f"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-behance"></i>
-                    <i class="fa fa-instagram"></i>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="bg">
+        </div>
+       
+        <div class="wrapper">
+            <!--sidebar-->
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <div class="profile">
+                        <img src="./files/nero.jpg" alt="logo">
+                        <p>Oghenero Sigbenu</p>
+                    </div>
+                    <li class="item" onclick="openCard('home')" >
+                        <a class="menu-btn">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="item" onclick="openCard('services')">
+                        <a class="menu-btn">
+                            <i class="fas fa-building"></i><span>Services</span>
+                        </a>
+                    </li>
+                    <li class="item" onclick="openCard('about')">
+                        <a class="menu-btn">
+                            <i class="fas fa-info"></i><span>About Us</span>
+                        </a>
+                    </li>
+                        <li class="item">
+                            <a href="#" class="menu-btn">
+                                <i class="fas fa-newspaper"></i><span>News</span>
+                            </a>
+                        </li>
+                    <li class="item" onclick="openCard('career')">
+                        <a class="menu-btn">
+                            <i class="fas fa-briefcase"></i><span>Career</span>
+                        </a>
+                    </li>
+                    <li class="item" onclick="openCard('contact')">
+                        <a class="menu-btn">
+                            <i class="fas fa-phone"></i><span>Contact Us</span>
+                        </a>
+                    </li>
                 </div>
             </div>
-            <footer>
-            </footer>
+            <!--main-container-->
+            <div class="main">
+                <div class="side"  style="color:white">
+                    <i class="fas fa-bars"  style="color:white"></i>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="card" id="home">
+                    <div class="bg-black">
+                        <img src="./files/logo.gif" alt="logo"/>
+                        <p>CREATE YOUR OWN WORLD</p>
+                    </div>
+                    <ul class="home-list">  
+                        <li class="item" onclick="openCard('home')" >
+                        <a class="menu-btn">
+                            <span>About us</span>
+                        </a>
+                    </li>
+                    <li class="item" onclick="openCard('services')">
+                        <a class="menu-btn">
+                            <span>Career</span>
+                        </a>
+                    </li>
+                    <li class="item" onclick="openCard('services')">
+                        <a class="menu-btn">
+                            <span>News</span>
+                        </a>
+                    </li>
+                    <li class="item" onclick="openCard('services')">
+                        <a class="menu-btn">
+                            <span>Contact us</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="card " id="about" style="display:none">
+                    
+                </div>
+                <div class="card" id="services" style="display:none">
+               <div class="service" id="three">
+                   <h4 onclick="openCard('academy')">ACADEMY</h4>
+                   <h4 onclick="openCard('records')">RECORDS</h4>
+                   <h4 onclick="openCard('studio')">STUDIOS</h4>
+               </div>
+               <p>CREATE YOR OWN WORLD</p>
+            </div>
+          
+            <div class="card" id="academy" style="display:none">
+                <a class="back" onclick="openCard('services')"><i class="fab fa-arrow-left"></i>Back</a>
+                <div class="record">
+                <div class="left">
+                    <h3>RECORDS</h3>
+                </div>
+                <div class="right">
+                    <p>Artist Management</p>
+                    <p>Tour Management</p>
+                    <p>Art Branding</p>
+                    <p>Production</p>
+                    <p>Promotion</p>
+                </div>
+            </div>
+            </div>
+            <div class="card" id="records" style="display:none">
+                <a class="back"  onclick="openCard('services')"><i class="fab fa-arrow-left"></i>Back</a>
+                <p class="soon">COMING SOON</p>
+                <div class="record">
+
+                    <div class="left">
+                        <h3>RECORDS</h3>
+                    </div>
+                    <div class="right">
+                        <p>Artist Management</p>
+                        <p>Tour Management</p>
+                        <p>Art Branding</p>
+                        <p>Production</p>
+                        <p>Promotion</p>
+                    </div>
+                </div>
+               </div>
+               <div class="card" id="studio" style="display:none">
+              Studios
+               </div>
+                <div class="card" id="news" style="display:none">
+                    m
+                </div>
+                <div class="card" id="career" style="display:none">
+                    c
+                </div>
+                <div class="card" id="contact" style="display:none">
+                    c
+                </div>
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.linkedin.com/in/sigbenu-oghenero-85092178/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/sigbenu-oghenero-85092178/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ogsigbenu" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Oghenero-Sigbenu" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-</body>
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
 </html>
