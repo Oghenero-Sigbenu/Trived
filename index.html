@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-    </head>
-    <body>
-        <div class="bg">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="bg">
+    </div>
+
+    <div class="wrapper">
+        <!--sidebar-->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <div class="profile">
+                    <img src="./files/nero.jpg" alt="logo">
+                    <p>Oghenero Sigbenu</p>
+                </div>
+                <li class="item" onclick="openCard('home')">
+                    <a class="menu-btn">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="item" onclick="openCard('services')">
+                    <a class="menu-btn">
+                        <i class="fas fa-building"></i><span>Services</span>
+                    </a>
+                </li>
+                <li class="item" onclick="openCard('about')">
+                    <a class="menu-btn">
+                        <i class="fas fa-info"></i><span>About Us</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="menu-btn"onclick="openCard('news')">
+                        <i class="fas fa-newspaper"></i><span>News</span>
+                    </a>
+                </li>
+                <li class="item" onclick="openCard('career')">
+                    <a class="menu-btn">
+                        <i class="fas fa-briefcase"></i><span>Career</span>
+                    </a>
+                </li>
+                <li class="item" onclick="openCard('contact')">
+                    <a class="menu-btn">
+                        <i class="fas fa-phone"></i><span>Contact Us</span>
+                    </a>
+                </li>
+            </div>
         </div>
-       
-        <div class="wrapper">
-            <!--sidebar-->
-            <div class="sidebar">
-                <div class="sidebar-menu">
-                    <div class="profile">
-                        <img src="./files/nero.jpg" alt="logo">
-                        <p>Oghenero Sigbenu</p>
-                    </div>
-                    <li class="item" onclick="openCard('home')" >
-                        <a class="menu-btn">
-                            <i class="fas fa-home"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="item" onclick="openCard('services')">
-                        <a class="menu-btn">
-                            <i class="fas fa-building"></i><span>Services</span>
-                        </a>
-                    </li>
-                    <li class="item" onclick="openCard('about')">
-                        <a class="menu-btn">
-                            <i class="fas fa-info"></i><span>About Us</span>
-                        </a>
-                    </li>
-                        <li class="item">
-                            <a href="#" class="menu-btn">
-                                <i class="fas fa-newspaper"></i><span>News</span>
-                            </a>
-                        </li>
-                    <li class="item" onclick="openCard('career')">
-                        <a class="menu-btn">
-                            <i class="fas fa-briefcase"></i><span>Career</span>
-                        </a>
-                    </li>
-                    <li class="item" onclick="openCard('contact')">
-                        <a class="menu-btn">
-                            <i class="fas fa-phone"></i><span>Contact Us</span>
-                        </a>
-                    </li>
-                </div>
+        <!--main-container-->
+        <div class="main">
+            <div class="side" style="color:white">
+                <i class="fas fa-bars" style="color:white"></i>
             </div>
-            <!--main-container-->
-            <div class="main">
-                <div class="side"  style="color:white">
-                    <i class="fas fa-bars"  style="color:white"></i>
+        </div>
+        <div class="main-container">
+            <div class="card" id="home">
+                <div class="bg-black">
+                    <img src="./files/logo.gif" alt="logo" />
+                    <p>CREATE YOUR OWN WORLD</p>
                 </div>
-            </div>
-            <div class="main-container">
-                <div class="card" id="home">
-                    <div class="bg-black">
-                        <img src="./files/logo.gif" alt="logo"/>
-                        <p>CREATE YOUR OWN WORLD</p>
-                    </div>
-                    <ul class="home-list">  
-                        <li class="item" onclick="openCard('home')" >
+                <ul class="home-list">
+                    <li class="item" onclick="openCard('home')">
                         <a class="menu-btn">
                             <span>About us</span>
                         </a>
@@ -86,80 +88,282 @@
                         </a>
                     </li>
                 </ul>
-                </div>
-                <div class="card " id="about" style="display:none">
-                    
-                </div>
-                <div class="card" id="services" style="display:none">
-               <div class="service" id="three">
-                   <h4 onclick="openCard('academy')">ACADEMY</h4>
-                   <h4 onclick="openCard('records')">RECORDS</h4>
-                   <h4 onclick="openCard('studio')">STUDIOS</h4>
-               </div>
-               <p>CREATE YOR OWN WORLD</p>
             </div>
-          
-            <div class="card" id="academy" style="display:none">
-                <a class="back" onclick="openCard('services')"><i class="fab fa-arrow-left"></i>Back</a>
-                <div class="record">
-                <div class="left">
-                    <h3>RECORDS</h3>
-                </div>
-                <div class="right">
-                    <p>Artist Management</p>
-                    <p>Tour Management</p>
-                    <p>Art Branding</p>
-                    <p>Production</p>
-                    <p>Promotion</p>
-                </div>
-            </div>
-            </div>
-            <div class="card" id="records" style="display:none">
-                <a class="back"  onclick="openCard('services')"><i class="fab fa-arrow-left"></i>Back</a>
-                <p class="soon">COMING SOON</p>
-                <div class="record">
-
+            <div class="card " id="about" style="display:none">
+                <div class="about">
                     <div class="left">
-                        <h3>RECORDS</h3>
+                        <h4>About Us</h4>
                     </div>
                     <div class="right">
-                        <p>Artist Management</p>
-                        <p>Tour Management</p>
-                        <p>Art Branding</p>
-                        <p>Production</p>
-                        <p>Promotion</p>
+                        <p>As a company, Tryved integrated Media is a force to be
+                            reckoned with in the Africanentertainment industry.
+                            Founded in 2019 as a content creation and brand
+                            management firm by a group of professionals in the
+                            multimedia and entertainment industry.</p><br>
+                            <p>
+                                Currently, its services are tailored towards creating
+                                industry standard content for the African media
+                                market and also empower her youths through
+                                professional trainings.
+                            </p><br>
+                            <p>
+                                As the digital era continues to develop, Tryved taste for
+                                delivering the utmost value has inspired the company’s
+                                expansion into innovative services such as partnerships,
+                                training, content production, publishing and marketing  
+                            </p><br>
+                            <p>Tryved is now a community of amazing people who are
+                                dedicated to creativity, innovation, excellence, and
+                                breaking new grounds.</p>
                     </div>
                 </div>
-               </div>
-               <div class="card" id="studio" style="display:none">
-              Studios
-               </div>
-                <div class="card" id="news" style="display:none">
-                    m
-                </div>
-                <div class="card" id="career" style="display:none">
-                    c
-                </div>
-                <div class="card" id="contact" style="display:none">
-                    c
-                </div>
-                <ul class="socials">
-                    <li>
-                        <a href="https://www.linkedin.com/in/sigbenu-oghenero-85092178/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/sigbenu-oghenero-85092178/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/ogsigbenu" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Oghenero-Sigbenu" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
             </div>
-        </div>
-        <script type="text/javascript" src="script.js"></script>
+            <div class="card" id="services" style="display:none">
+                <div class="service" id="three">
+                    <h4 onclick="openCard('academy')">ACADEMY</h4>
+                    <h4 onclick="openCard('records')">RECORDS</h4>
+                    <h4 onclick="openCard('studio')">STUDIOS</h4>
+                </div>
+                <p>CREATE YOR OWN WORLD</p>
+            </div>
 
-    </body>
+            <div class="card" id="academy" style="display:none">
+                <div class="bg"></div>            
+                <a class="back" onclick="openCard('services')"><i class="fab fa-arrow-left"></i>Back</a>
+                <div class="record">
+                    <div class="left">
+                        <h3>ACADEMY</h3>
+                        <small>Learn professional skills</small>
+                    </div>
+                    <div class="right">
+                        <p onclick="openCard('music')">Music Production</p>
+                        <p onclick="openCard('design')">Graphics Design</p>
+                        <p onclick="openCard('cinema')">Cinematography</p>
+                        <p onclick="openCard('video')">video Editing</p>
+                        <p onclick="openCard('photo')">Photography</p>
+                        <ul class="bottom">
+                            <li>Learn</li>
+                            <li>Be Certify</li>
+                            <li>Earn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="music" style="display:none">
+                <div class="bg"></div>
+                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <p class="soon">Music Production</p>
+                <div class="white">
+                    <p>All you need to produce good music like a professional.</p>
+                </div>
+                <p class="title">Get indept training on music production from some of the best hands in the industry.
+                </p>
+                <div class="row">
+                    <div class="left">
+                        <p>Basic Music Production</p>
+                        <a>Composition Basics</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                    </div>
+                    <div class="right">
+                        <p>Advanced Music Production</p>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="video" style="display:none">
+                <div class="bg"></div>
+                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <p class="soon">Video Editing</p>
+                <div class="white">
+                    <p>Become a professional video editor, do it like a pro.</p>
+                </div>
+                <p class="title">Get indept training on video editing from some of the best hands in the industry.</p>
+                <div class="row">
+                    <div class="left">
+                        <p>Basic Video Editing</p>
+                        <a>Composition Basics</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                    </div>
+                    <div class="right">
+                        <p>Advanced Video Editing</p>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="photo" style="display:none">
+                <div class="bg"></div>
+                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <p class="soon">Photography</p>
+                <div class="white">
+                    <p>Making professional photography as easy as possible</p>
+                </div>
+                <p class="title">Get indept training on photography from some of the best ands in the industry.</p>
+                <div class="row">
+                    <div class="left">
+                        <p>Basic Photography</p>
+                        <a>Composition Basics</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                        <a>Camera Angle</a>
+                    </div>
+                    <div class="right">
+                        <p>Advanced Photography</p>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                        <a>Writing with motion</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card" id="design" style="display:none">
+                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <p class="soon">Graphics Design</p>
+                <div class="white">
+                    <p>Create compelling graphics like a pro</p>
+                </div>
+                <p class="title">Learn all it takes to create and tell good stories with pictures.</p>
+                <div class="row">
+                    <div class="left">
+                        <p>Basic Graphics Design</p>
+                        <a>Composition Basics</a>
+                        <a>Camera Angle</a>
+                    </div>
+                    <div class="right">
+                        <p>Advanced Graphics Design</p>
+                        <a>Writing with motion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="cinema" style="display:none">
+                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <p class="soon">Cinematography</p>
+                <div class="white">
+                    <p>Image making for cinematography & directors</p>
+                </div>
+                <p class="title">Get first hand and indepth training on cinematography
+                    from professional in the industry.</p>
+                <div class="row">
+                    <div class="left">
+                        <p>Basic Cinematography</p>
+                        <a>Composition Basics</a>
+                        <a>Camera Angle</a>
+                    </div>
+                    <div class="right">
+                        <p>Advanced Cinematography</p>
+                        <a>Writing with motion</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="records" style="display:none">
+                <div class="bg">
+                </div>
+                <a class="back" onclick="openCard('services')"><i class="fab fa-arrow-left"></i>Back</a>
+                    <p class="soon">COMING SOON</p>
+                    <div class="record">
+                        <div class="left">
+                            <h3>RECORDS</h3>
+                        </div>
+                        <div class="right">
+                            <p>Artist Management</p>
+                            <p>Tour Management</p>
+                            <p>Art Branding</p>
+                            <p>Production</p>
+                            <p>Promotion</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="card" id="studio" style="display:none">
+                <h3 class="soon">Studios</h3>
+                <div class="record">
+                    <div class="left">
+                        <p>Brand <br> Partnership</p>
+                    </div>
+                    <div class="right">
+                        <p>Content <br>Production</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="news" style="display:none">
+                <p class="soon">News</p>
+            </div>
+            <div class="card" id="career" style="display:none">
+                <div class="about">
+                    <div class="left">
+                        <h4>Careers</h4>
+                    </div>
+                    <div class="right">
+                        <h5>Job Opening</h5><br>
+                        <p>At Tryved, we are always looking forward to working with talented
+                            and enthusiastic team members to help with our vision.
+                            Our mission for every member of the Tryved team is to create a
+                            nurturing environment for staffs, artists, and students at every stage
+                            of their career so as to enable them make global impact.
+                            Are you good at your craft? Are you looking for a thriving media
+                            environment to work? Then Tryved might be the right place for you</p><br>
+
+                            <h5>Internships</h5><br>
+                            <p>Are you a current University student interested in an internship?
+                                Tryved offers internship opportunities for learning and development
+                                in a creative and dynamic environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="contact" style="display:none">
+                <div class="contact">
+                  
+                        <h4>contact Us</h4>
+                        <p>Our team will be in touch</p>
+                    <h4>OUR OFFICE</h4>
+                        <P>3 Segun Kujore Street, CMD Road
+                            Magodo,
+                            Lagos.</P>
+                        <p>Email: info@tryved.com</p>
+                        <p>Call: 08123457970</p>
+                        <p>Opening Hour: 9:00 am</p>
+                       <p> Closing Hour: 5:00 pm</p>
+
+                </div>
+            </div>
+            <ul class="socials">
+                <li>
+                    <a href="https://www.linkedin.com/in/sigbenu-oghenero-85092178/" target="_blank"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sigbenu-oghenero-85092178/" target="_blank"><i
+                            class="fab fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/ogsigbenu" target="_blank"><i class="fab fa-twitter"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Oghenero-Sigbenu" target="_blank"><i class="fab fa-facebook"
+                            aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
 </html>
