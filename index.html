@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
+    <title>Tryved Studio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
@@ -18,8 +18,7 @@
         <div class="sidebar">
             <div class="sidebar-menu">
                 <div class="profile">
-                    <img src="./files/nero.jpg" alt="logo">
-                    <p>Oghenero Sigbenu</p>
+                    <img src="./files/tryved-logo.png" alt="logo">
                 </div>
                 <li class="item" onclick="openCard('home')">
                     <a class="menu-btn">
@@ -66,7 +65,7 @@
                     <img src="./files/logo.gif" alt="logo" />
                     <p>CREATE YOUR OWN WORLD</p>
                 </div>
-                <ul class="home-list">
+                <!-- <ul class="home-list">
                     <li class="item" onclick="openCard('home')">
                         <a class="menu-btn">
                             <span>About us</span>
@@ -87,9 +86,11 @@
                             <span>Contact us</span>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
             <div class="card " id="about" style="display:none">
+                <div class="bg">
+                </div>
                 <div class="about">
                     <div class="left">
                         <h4>About Us</h4>
@@ -120,16 +121,16 @@
             </div>
             <div class="card" id="services" style="display:none">
                 <div class="service" id="three">
-                    <h4 onclick="openCard('academy')">ACADEMY</h4>
-                    <h4 onclick="openCard('records')">RECORDS</h4>
-                    <h4 onclick="openCard('studio')">STUDIOS</h4>
+                    <h4 onclick="openCard('academy')"><a>ACADEMY</a></h4>
+                    <h4 onclick="openCard('records')"><a>RECORDS</a></h4>
+                    <h4 onclick="openCard('studio')"><a>STUDIOS</a></h4>
                 </div>
                 <p>It's all about you</p>
             </div>
-
             <div class="card" id="academy" style="display:none">
                 <div class="bg"></div>            
-                <a class="back" onclick="openCard('services')"><i class="fab fa-arrow-left"></i>Back</a>
+                <a class="back" onclick="openCard('services')">
+                    <i class="fas fa-long-arrow-alt-left"></i>Back</a>
                 <div class="record">
                     <div class="left">
                         <h3>ACADEMY</h3>
@@ -151,16 +152,17 @@
             </div>
             <div class="card" id="music" style="display:none">
                 <div class="bg"></div>
-                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <a class="back" onclick="openCard('academy')">
+                    <i class="fas fa-long-arrow-alt-left"></i>Back</a>
                 <p class="soon">Music Production</p>
                 <div class="white">
                     <p>you too can become a professional producer.</p>
                 </div>
-                <p class="title">Get indept training on music production from some of the best hands in the industry.
-                </p>
+                <p class="title">Get indept training on music production 
+                    from some of the best hands in the industry.</p>
                 <div class="row">
                     <div class="left">
-                        <p>Basic Music Production</p>
+                        <p><strong>Basic Music Production</strong></p>
                         <a>Introduction to music production</a>
                         <a>Setting up your own recording studio</a>
                         <a>Composing and sequencing</a>
@@ -171,7 +173,7 @@
                         <a>Delivery</a>
                     </div>
                     <div class="right">
-                        <p>Advanced Music Production</p>
+                        <p><strong>Advanced Music Production</strong></p>
                         <a>Advance studio setup</a>
                         <a>Composing and sequencing</a>
                         <a>understanding FX and dynamics</a>
@@ -184,7 +186,8 @@
             </div>
             <div class="card" id="video" style="display:none">
                 <div class="bg"></div>
-                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <a class="back" onclick="openCard('academy')">
+                    <i class="fas fa-long-arrow-alt-left"></i>Back</a>
                 <p class="soon">Video Editing</p>
                 <div class="white">
                     <p>Learn how to do it like the professional do.</p>
@@ -192,7 +195,7 @@
                 <p class="title">Get indept training on video editing from some of the best hands in the industry.</p>
                 <div class="row">
                     <div class="left">
-                        <p>Basic Video Editing</p>
+                        <p><strong>Basic Video Editing</strong></p>
                         <a>How to take your shots</a>
                         <a>Editing with premiere pro</a>
                         <a>Effect and keyframing</a>
@@ -202,7 +205,7 @@
                         <a>Rendering</a>
                     </div>
                     <div class="right">
-                        <p>Advance video editing</p>
+                        <p><strong>Advance video editing</strong></p>
                         <a>Pre edit consideration</a>
                         <a>Using premiere pro/ after effect</a>
                         <a>Stepping into the cutting room</a>
@@ -215,7 +218,8 @@
             </div>
             <div class="card" id="photo" style="display:none">
                 <div class="bg"></div>
-                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <a class="back" onclick="openCard('academy')">
+                    <i class="fas fa-long-arrow-alt-left"></i>Back</a>
                 <p class="soon">Photography</p>
                 <div class="white">
                     <p>Making professional photography as easy as possible</p>
@@ -223,7 +227,7 @@
                 <p class="title">Get indept training on photography from some of the best hands in the industry.</p>
                 <div class="row">
                     <div class="left">
-                        <p>Basic Photography</p>
+                        <p><strong>Basic Photography</strong></p>
                         <a>Introduction to photography</a>
                         <a>Photography terminologies</a>
                         <a>Understanding your camera
@@ -234,7 +238,7 @@
                         <a>Camera Angles</a>
                     </div>                     
                     <div class="right">
-                        <p>Fundamentals of a great photo</p>
+                        <p><strong>Fundamentals of a great photo</strong></p>
                         <a>Why are my picture blurry</a>
                         <a>Handy camera knowledge</a>
                         <a>kick it up a notch with flash</a>
@@ -248,7 +252,8 @@
 
             </div>
             <div class="card" id="design" style="display:none">
-                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <a class="back" onclick="openCard('academy')">
+                    <i class="fas fa-long-arrow-alt-left"></i>Back</a>
                 <p class="soon">Graphics Design</p>
                 <div class="white">
                     <p>Create compelling graphics like a pro</p>
@@ -256,7 +261,7 @@
                 <p class="title">Learn all it takes to create and tell good stories with pictures.</p>
                 <div class="row">
                     <div class="left">
-                        <p>Basic Graphics Design</p>
+                        <p><strong>Basic Graphics Design</strong></p>
                         <a>Introduction to graphics design</a>
                         <a>Visual elements of graphics design</a>
                         <a>Design principle of Graphics Design</a>
@@ -265,7 +270,7 @@
                         <a>Working with Adobe photoshop</a>
                     </div>
                     <div class="right">
-                        <p>Advanced Graphics Design</p>
+                        <p><strong>Advanced Graphics Design</strong></p>
                         <a>Creativity</a>
                         <a>Adobe illuustrator breakdown</a>
                         <a>Adobe photoshop breakdown</a>
@@ -277,7 +282,8 @@
                 </div>
             </div>
             <div class="card" id="cinema" style="display:none">
-                <a class="back" onclick="openCard('academy')"><i class="fab fa-arrow-left"></i>Back</a>
+                <a class="back" onclick="openCard('academy')">
+                    <i class="fas fa-long-arrow-alt-left"></i>Back</a>
                 <p class="soon">Cinematography</p>
                 <div class="white">
                     <p>Image making for cinematography & directors</p>
@@ -286,7 +292,7 @@
                     from the industry professionals.</p>
                 <div class="row">
                     <div class="left">
-                        <p>Basic Cinematography</p>
+                        <p><strong>Basic Cinematography</strong></p>
                         <a>Composition Basics</a>
                         <a>Camera Angles</a>
                         <a>Establishing shots</a>
@@ -298,7 +304,7 @@
                         <a>Editing</a>
                     </div>
                     <div class="right">
-                        <p>Advanced Cinematography</p>
+                        <p><strong>Advanced Cinematography</strong></p>
                         <a>writing with motion</a>
                         <a>Shooting methods</a>
                         <a>Visual language</a>
@@ -323,7 +329,8 @@
             <div class="card" id="records" style="display:none">
                 <div class="bg">
                 </div>
-                <a class="back" onclick="openCard('services')"><i class="fab fa-arrow-left"></i>Back</a>
+                <a class="back" onclick="openCard('services')">
+                    <i class="fas fa-long-arrow-alt-left"></i>Back</a>
                     <p class="soon">COMING SOON</p>
                     <div class="record">
                         <div class="left">
@@ -339,26 +346,76 @@
                     </div>
             </div>
             <div class="card" id="studio" style="display:none">
+                <div class="bg">
+                </div>
+                <a class="back" onclick="openCard('services')">
+                    <i class="fas fa-long-arrow-alt-left"></i>Back</a>
                 <h3 class="soon">Studios</h3>
                 <div class="record">
                     <div class="left">
-                        <p>Brand <br> Partnership</p>
+                        <p><strong>Brand <br> Partnership</strong></p>
                     </div>
                     <div class="right">
-                        <p>Content <br>Production</p>
+                        <p><strong>Content <br>Production</strong></p>
                     </div>
                 </div>
             </div>
             <div class="card" id="news" style="display:none">
                 <p class="soon">News</p>
+                <div class="new">
+                    <div class="news-text">
+                        <h2>Beginners Vdeo Editing Bootcamp</h2>
+                        <div><a>Go from novice to PRO</a><button>Get Started</button></div>
+                        <h2>Bootcamp Start Date: September 6th</h2>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <h2>Course Description</h2>
+                    <p>The two weeks beginners bootcamp will be centered on the industry standard video editing software, Adobe Premiere Pro CC. 
+                        This course will take you through the fundamentals of video editing, how to take your shots, editing video and audio, 
+                        correcting color, adding titles and  effects, working with green screen, and lots more.  The course begins with how to record good footages
+                        and then goes through the entire post-production workflow, including media import, editing and trimming, audio adjustment, 
+                        applying effects, and exporting. By the end of the course, you should be able to create your own video projects with Premiere Pro.</p>
+                        <p>The course is designed in such a way that you get to be directly invoved in the entire process, as you get to record your own footages 
+                            and do the editing yourself, while being guided by the facilitator. At the end of this course, you should be able to produce professional
+                            video content for your desired media goal.</p>
+                    <div class="bg-purple"> 
+                        <span class="price"><strong>Price: N5000</strong></span>
+                        <button>Make payment now</button>
+                    </div>
+                    <p>This bootcamp is going to feature: downloadable ebook on video editng/ Video Lessons, the software
+                        and Live Zoom Workshops with the Instructor.</p>
+                </div>
+                <div class="bg-purple">
+                    <p><strong>This bootcamp is going to feature: downloadable ebook on video editng/ Video Lessons, the software
+                        and Live Zoom Workshops with the Instructor.</strong></p>
+                    <p>How to record good footages | Importing media (video, audio, graphics)
+                        Organizing assets into bins | Editing and trimming video
+                        Using markers for organization | Editing audio and multi-camera footage
+                        Animating media files | Working with effects
+                        Manipulating clip speed | Correcting color
+                        Adding titles | Exporting and sharing your project</p>
+                    
+                </div>
+                <div class="bg-white">
+                    <div class="flex">
+                        <div class="facilitator">
+                            <img src="./files/paris-01(1).png" alt="facilitator"/>
+                        </div>
+                        <h3>MEET YOUR FACILITATOR
+                            PARIS ONORIODE
+                            VIDEO EDITOR & MOTION GRAPHICS ANIMATOR</h3>
+                    </div>
+                </div>
             </div>
             <div class="card" id="career" style="display:none">
+                <div class="bg"></div>
                 <div class="about">
                     <div class="left">
                         <h4>Careers</h4>
                     </div>
                     <div class="right">
-                        <h5>Job Opening</h5><br>
+                        <h4><strong>Job Opening</strong></h4><br>
                         <p>At Tryved, we are always looking forward to working with talented
                             and enthusiastic team members to help with our vision.
                             Our mission for every member of the Tryved team is to create a
@@ -367,7 +424,7 @@
                             Are you good at your craft? Are you looking for a thriving media
                             environment to work? Then Tryved might be the right place for you</p><br>
 
-                            <h5>Internships</h5><br>
+                            <h4>Internships</h4><br>
                             <p>Are you a current University student interested in an internship?
                                 Tryved offers internship opportunities for learning and development
                                 in a creative and dynamic environment.</p>
@@ -375,19 +432,22 @@
                 </div>
             </div>
             <div class="card" id="contact" style="display:none">
+                <div class="bg"></div>
                 <div class="contact">
-                  
-                        <h4>contact Us</h4>
+                    <div class="contact-text">
+                        <h3><strong>Contact Us</strong></h3>
                         <p>Our team will be in touch</p>
                     <h4>OUR OFFICE</h4>
-                        <P>3 Segun Kujore Street, CMD Road
+                        <P><i class="fas fa-map-marker"></i> 3 Segun Kujore Street, CMD Road
                             Magodo,
                             Lagos.</P>
-                        <p>Email: info@tryved.com</p>
-                        <p>Call: 08123457970</p>
+                        <p><i class="fas fa-envelope"></i> info@tryved.com</p>
+                        <p><i class="fas fa-phone"></i> 08123457970</p>
                         <p>Opening Hour: 9:00 am</p>
                        <p> Closing Hour: 5:00 pm</p>
-
+                       <a onMouseover="this.style.color='green';" onMouseout="this.style.color='blue'"
+                       href="mailto:info@tryved.com" class="email">Talk to me!</a>
+                    </div>
                 </div>
             </div>
             <ul class="socials">
