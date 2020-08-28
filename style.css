@@ -4,7 +4,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color:white;
 }
 
@@ -243,6 +243,9 @@ text-align: center;
 .main-container .card:nth-of-type(2){
   background-image: url("./files/ABOUT\ US.jpg");
 }  
+.main-container .card:nth-of-type(3){
+  background-image: url("./files/STUDIOS\ RECORDS\ ACADEMY-02.png");
+} 
 .main-container .card:nth-of-type(4){
   background-image: url("./files/tryved-academy.jpg");
 }    
@@ -266,7 +269,9 @@ text-align: center;
 
 } 
 .main-container .card:nth-of-type(12){
-  background-image: url("./files/work.png");
+  background-image: url("./files/training.png");
+  background-size: cover;
+  width: 100%;
 } 
 .main-container .card:nth-of-type(13){
   background-image: url("./files/CAREER.jpg");
@@ -276,6 +281,7 @@ text-align: center;
 }     
 .main-container .card{
   background-size: cover;
+  background-repeat: no-repeat;
   margin-top: -50px;
 }    
  .main-container .card:nth-of-type(10){
@@ -305,6 +311,7 @@ text-align: center;
 /* services card */
 #services{
   text-align: center;
+
 }
 .soon{
   text-align: center;
@@ -316,7 +323,6 @@ text-align: center;
   padding-bottom: 7px;
   justify-content: center !important;
 }
-
 small{
   font-size: 12px;
 }
@@ -342,6 +348,7 @@ small{
   margin: 20px auto;
   text-align: center;
 }
+
 #cinema{
   text-align: center !important;
 }
@@ -354,13 +361,12 @@ small{
   display: flex;
   justify-content:center;
   width:80%;
-  height: 80vh;
+  height: 50vh;
   align-content: center;
   align-items: center;
   position: absolute;
   z-index: 1000;
 }
-
 .row{
   font-size: 1.5em;
   line-height: 1.2em;
@@ -416,7 +422,7 @@ small{
 }
 .service{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 100vh;
   flex-wrap: wrap;
@@ -468,7 +474,7 @@ small{
   margin: 0 auto;
   justify-content: center;
   object-fit: cover;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
 }
 .news-text{
@@ -480,6 +486,17 @@ small{
   background: white !important;
   color: #1b2464 !important;
   padding: 1em 0em;
+}
+.pay{
+  font-size: 2em;
+}
+.bg-blue{
+  background: purple !important;
+  padding: 1em 0em; 
+}
+.btn{
+  background: #1b2464!important;
+  color: white !important;
 }
 .bg-purple{
   background: #1b2464!important;
@@ -529,6 +546,9 @@ button{
 .wrapper .main-container .card:nth-of-type(12) {
   height: auto;
 }
+.bg-black p{
+  margin-top: -50px;
+}
   @media screen and (max-width: 900px){
     .wrapper .main-container{
       width: (100% - 250px);
@@ -567,6 +587,9 @@ button{
     text-align: center !important;
     margin-bottom: 40px;
   }
+  .pay{
+    font-size: 1em;
+  }
   .row{
     flex-wrap: wrap;
   }
@@ -583,10 +606,26 @@ button{
   .about p{
     line-height:1.5em;
   }
+  .new{
+    font-size: 1.5em;
+  }
+  .flex{
+    flex-direction: column;
+    height: 400px;
+    flex-direction: column-reverse;
+  }
+  .facilitator{
+    width: 60%;
+    height: 100%;
+  }
+  .flex h3{
+    width: 80%;
+    text-align: left;
+  }
   }  
 @media screen and (max-width: 500px){
   .bg-black p{
-    margin-top: -230px !important;
+    /* margin-top: -20px !important; */
   
   }}
 @media screen and (max-width: 700px){
@@ -615,7 +654,7 @@ button{
     /* margin-top: -100px; */
   }
   .bg-black p{
-    margin-top: -80px;
+    /* margin-top: -80px; */
   }
  .row{
    font-size: 1em;
@@ -627,7 +666,7 @@ button{
     /* margin-top: -100px; */
   }
   .bg-black p{
-    margin-top: -120px;
+    /* margin-top: -120px; */
   
   }
 }
@@ -635,7 +674,7 @@ button{
 .bg-black{
   /* margin-top: -160px; */
 }
-.bg-black p{
+/* .bg-black p{
   margin-top: -200px;
-}
+} */
 }
